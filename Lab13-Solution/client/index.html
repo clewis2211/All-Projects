@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 13 - Solution</title>
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="scripts2.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="input-container">
+            <form>
+                Name: <input type="text" id="name">
+                <br>
+                Delivers: <input type="checkbox" id="delivers">
+                <br>
+                Phone: <input type="tel" id="phone">
+                <br>
+                Addr Line1: <input type="text" id="addr1">
+                <br>
+                Addr Lin2: <input type="text" id="addr2">
+                <br>
+                City: <input type="text" id="city">
+                <br>
+                State: <input type="text" maxlength="2" id="state">
+                <br>
+                ZIP: <input type="number" maxlength="5" id="zip">
+                <br>
+                <input type="submit" value="SUBMIT!" onclick="postLoc()">
+            </form>
+        </div>
+        <div id="loc-container"></div>
+    </body>
+</html>

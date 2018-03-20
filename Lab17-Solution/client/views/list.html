@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1">
+            <h5>User:</h5>
+        </div>
+        <div class="col-lg-1">
+            <!--GIVE THIS A $SCOPE VARIABLE FOR EASE OF ACCESS WHEN POSTING-->
+            <select class="custom-select" id="users-list" ng-model="userId">
+                <!--ADD ALL OF OUR USERS TO THE SELECT MENU-->
+                <option ng-repeat="user in users" value="{{user.id}}">{{user.name}}</option>
+            </select>
+        </div>
+        <div class="col-lg-10">
+            <div class="input-group">
+                <!--GIVE THIS A $SCOPE VARIABLE FOR EASE OF ACCESS WHEN POSTING-->
+                <input type="text" class="form-control" placeholder="Send Chirp..." id="chirp-input" ng-model="message">
+                <span class="input-group-btn">
+                    <!--GIVE THIS A FUNCTION TO RUN WHEN CLICKED THAT WILL POST A NEW CHIRP-->
+                    <button class="btn btn-default" type="button" id="chirp-button" ng-click="postChirp()">Chirp!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="list-group" id="chirp-container">
+            <!--ADD ALL OF OUR CHIRPS TO THE PAGE IN THIS UL-->
+            <li ng-repeat="chirp in chirps" ng-click="goToSingle(chirp.id)">
+                <h4>{{users[chirp.userId - 1].name}}</h4>
+                <p>{{chirp.message}}</p>
+                <p>{{chirp.timestamp}}</p>
+                <hr>
+            </li>
+        </ul>
+    </div>
+</div>

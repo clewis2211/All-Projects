@@ -1,0 +1,210 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; 
+    transition: 0.5s; 
+
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+body{
+      background-color:black;
+    background-image: url(https://tctechcrunch2011.files.wordpress.com/2015/08/clouds.jpg);
+    background-size: cover  
+}
+
+body {
+    text-align: center; 
+    
+
+}
+
+h3{
+    display: inline;
+    
+}
+h1{
+    display: inline
+}
+h1.list{
+    clear: left;
+    text-decoration: black;
+}
+button{
+    display:block;
+    clear:right;
+   
+    
+}
+img{
+    border-left: 1px solid yellow
+}
+
+messagebox {
+    position: fixed;
+    bottom: 1%;
+    margin-left: 65.2%;
+    height:40%;
+    width:25%;
+}
+
+subtext {
+    position:fixed;
+    bottom:0;
+    width:25%;
+    margin-left: 65.2%;
+    height:5%;
+    border-radius: 200% 200% 0% 0%;
+    z-index: 1
+}
+
+.sidebar {
+    text-align: center;
+    margin:0 auto;
+    color:#ffa500;
+    font-size: 3em;  
+}
+
+express {
+    transform: translate(-394% ,-10%);
+    width:93.1px;
+    height:62.5px;
+    margin-top:0;
+    border: 5px solid turquoise;
+}
+
+id {
+    background-color: teal;
+    max-width: 60%;
+    margin:-2% auto;
+    padding: 2%;
+    border-radius: 30px 10px;
+   background: turquoise; 
+    background: -webkit-linear-gradient(left top,  teal,rgba(64,224,208, 0.7)); 
+    background: -o-linear-gradient(bottom right,  teal, rgba(64,224,208, 0.7)); 
+    background: -moz-linear-gradient(bottom right teal, rgba(64,224,208,0.7 )); 
+    background: linear-gradient(to bottom right,  teal, rgba(64,224,208 , 0.7));
+    border-left: 10px solid #ffa500
+}
+
+bodyparse {
+    padding: 1em 1em;
+    text-align: center;
+    max-width: 80%;
+    margin: 1% auto;
+    border-radius: 30px 10px;
+    background-color: rgba(77, 182, 172,0.7);
+    border-bottom: 7px solid teal;
+}
+}
+
+h1 {
+ border: 10px solid turquoise;
+    -ms-transform-origin-x: 1em;
+    margin-right: 1em;
+    margin-left:20em;
+    margin-top:5em;
+    margin-bottom: 2em;
+    clear:both;
+    border-radius: 500px;
+    height:40%;
+    width:35%;
+    box-shadow: 
+	0 0 0 2px #000,  
+	0 0 0 3px #999,  
+	0 0 0 9px #fa0,
+	0 0 0 10px #666,  
+	0 0 0 16px #fd0,
+	0 0 0 18px #000;    
+}    
+}
+
+.allUsers{
+    text-align: center;
+    margin:0 auto
+}
+h2{
+    font-size: 225%
+}
+/* USER */
+.tinyuser{
+    transform: translate(67% ,258%);
+    width: 93.1px;
+    height: 62.5px;
+    margin-top: 0;
+    border: 5px solid turquoise;
+}
+
+div.chirp#userchirp:hover{
+    background-color: black
+}

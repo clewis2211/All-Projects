@@ -1,0 +1,12 @@
+.chirp-container {
+    /*width: 10em;*/
+    /*height: 10em;*/
+    border: 1px solid black;
+    text-align: center;
+    margin: 2em;
+    display: inline-block;
+}
+
+#users-list {
+    margin-top: .5em;
+}

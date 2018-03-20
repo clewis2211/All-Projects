@@ -1,0 +1,9 @@
+.chirp {
+    border: 1px solid black;
+    margin: 1em;
+    display: inline-block;
+    text-align: center;
+    background-color: lightblue;
+    width: 5em;
+    height: 5em;
+}

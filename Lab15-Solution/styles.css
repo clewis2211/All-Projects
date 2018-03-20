@@ -1,0 +1,13 @@
+.die {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    border: 2px solid black;
+    margin: 1em;
+    text-align: center;
+    line-height: 3em;
+}
+
+#button-container {
+    text-align: center;
+}

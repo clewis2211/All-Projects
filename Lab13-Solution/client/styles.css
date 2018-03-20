@@ -1,0 +1,17 @@
+.location {
+    width: 75%;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.left {
+    width: 30%;
+    display: inline-block;    
+}
+
+.right {
+    display: inline-block;    
+    width: 35%;
+    /*float: right;*/
+    border-left: 2px dashed black;
+}

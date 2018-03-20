@@ -1,0 +1,59 @@
+<!-- <div class="well sidebar-nav" ng-app="navList">
+    <ul class="nav nav-list" ng-controller="navCtrl">
+        <li ng-class="navClass('home')"><a href='#/home'>Home</a></li>
+        <li ng-class="navClass('about')"><a href='#/about'>About Us</a></li>
+        <li ng-class="navClass('contact')"><a href='#/contact'>Contact Us</a></li>
+    </ul>
+</div> -->
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">Chirps</a>
+  <a href="#contact">User</a>
+  <a href="#about">Single</a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Chirps</a>
+  <a href="#">User</a>
+  <a href="#">Single</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+<div ng-controller="allGetController">
+    <h1 class="chirper">Chirper!</h1>
+    <div class='input'>
+        <form>
+            <p class='inputprompt'>User:</p> <input class='box' type="text" name="User" placeholder="User" ng-model="user" required>
+            <p class='inputprompt'>Message:</p>
+            <input class='box' type="text" name="Message" placeholder="Message" ng-model="message" required><br>
+            <input class='submitbutton' type="button" value="Submit" ng-click="insertdata()" />
+        </form>
+    </div>
+    <h3 id='list' class="h1list">Recent Chirps!</h3>
+    <div > 
+        <div class='chirp' ng-repeat='chirps in allChirps' id={{chirp.id}}>
+            
+            <h4 ng-click="deleteSingle(chirps.id)">X</h4>
+            <a ng-click="goToSingle(chirps.id)" href='#single'>
+                 <hr class='line'/> 
+                <img class= 'tiny' src="">
+                <div class='user/name'>
+                <p class='user'>USER: </p>
+                <p class='username'>{{chirps.user}}</p>
+                </div>
+                <p class='message'>CHIRP:</p>
+                <p class='messagetext'> {{ chirps.message}} </p>
+            </a>
+        </div>
+    </div>
+</div>

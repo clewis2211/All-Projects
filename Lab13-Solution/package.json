@@ -1,0 +1,16 @@
+{
+  "name": "lab13-solution",
+  "version": "1.0.0",
+  "description": "Pizza Planet Solution",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.24"
+  }
+}

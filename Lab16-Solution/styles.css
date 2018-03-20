@@ -1,0 +1,38 @@
+#shape-canvas {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    background-color: paleturquoise;
+    display: inline-block;
+}
+
+#shape-details {
+    display: inline-block;
+    position: relative;
+    left: 650px;
+}
+
+.circle {
+    position: absolute;
+    background-color: rebeccapurple;
+    border-radius: 100%;
+}
+
+.triangle {
+    position: absolute;
+    /*background-color: goldenrod;*/
+}
+
+.rectangle {
+    position: absolute;
+    background-color: papayawhip;
+}
+
+.square {
+    position: absolute;
+    background-color: thistle;
+}
+
+input {
+    margin: 2em 0;
+}
