@@ -1,0 +1,13 @@
+<h1>These are my books</h1>
+<div ng-repeat="book in books">
+    <img class="cover-img" ng-src="{{book.image}}" alt="">
+    <h3>{{book.title}}</h3>
+    <h4>{{book.author}}</h4>
+    <a ng-href="/{{book.id}}">Go to Single</a>
+</div>
+
+<style>
+    .cover-img {
+        width: 5em;
+    }
+</style>

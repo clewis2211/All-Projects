@@ -1,0 +1,10 @@
+
+.box {
+    background-color: black;
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+    color: white;
+    text-align: center;
+    line-height: 3em;
+}
